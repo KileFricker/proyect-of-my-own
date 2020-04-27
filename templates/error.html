@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    RRRR...
+{% endblock %}
+
+{% block body %}
+    <h1>Error in registration</h1>
+    something went wrong while checking what you entered
+    <ul>
+      <li><a href="{{ url_for('logup') }}"> Crea tu cuenta!</a>
+    </ul>
+{% endblock %}

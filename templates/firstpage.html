@@ -4,5 +4,9 @@ Contraseñador!
 {% endblock %}
 
 {% block body %}
-
+<div class=divs id=div1>
+  <ul> <h4>options!</h4>
+    <li><a href="{{ url_for('logup') }}"> Regístrate! </a>
+    <li><a href="{{ url_for('login') }}"> Loguéate!</a>
+  </ul>
 {% endblock %}
