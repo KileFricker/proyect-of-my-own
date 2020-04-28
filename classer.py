@@ -9,14 +9,14 @@ class User(db.Model):
 
     __tablename__="user_information"
     id= db.Column(db.Integer, primary_key=True)
-    Username= db.Column(db.String,  nullable=True)
+    Username= db.Column(db.String,  unique=True)
     Password= db.Column(db.String, nullable=False)
     Setinfo= db.relationship("app", backref="User", lazy=True)
 
     def useradd(Username, Password):
         createuser = User(Username=Username, Password=Password)
         db.session.add(createuser)
-        de.session.commit()
+        db.session.commit()
 
 
 class apps(db.Model):

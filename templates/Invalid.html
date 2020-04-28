@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %}
+ Credenciales Invalidas!
+{% endblock %}
+
+{% block body %}
+<h1>Error in registration</h1>
+Intenta de nuevo
+<ul>
+  <li><a href="{{ url_for('login') }}"> Intenta de nuevo</a>
+</ul>
+{% endblock %}
